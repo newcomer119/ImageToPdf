@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to PDF Converter</h1>
+        <div class="upload-area">
+            <input type="file" id="imageInput" accept="image/*" multiple hidden>
+            <label for="imageInput" class="upload-label">
+                <span class="upload-icon">📁</span>
+                <span>Choose images or drag them here</span>
+            </label>
+        </div>
+        <div id="imagePreview"></div>
+        <button id="convertBtn" disabled>Convert to PDF</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
